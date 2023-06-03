@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const pipePosition = pipe.offsetLeft;
         const marioPosition = + window.getComputedStyle(mario).bottom.replace('px', '');
 
-        console.log(marioPosition);
+       
 
         if (pipePosition <= 120 && pipePosition > 0 && marioPosition < 80) {
             pipe.style.animation = 'none';
@@ -36,5 +36,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 10)
 
     document.addEventListener('keydown', jump);
+    document.addEventListener('touchstart', jump);
+
+
+
+//>>>>>>>>>>>>>>>>>
+window.addEventListener('touchstart', () =>  console.log('touchstart'));
 
 });
