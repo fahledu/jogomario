@@ -36,11 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 10)
 
     document.addEventListener('keydown', jump);
-    document.addEventListener('touchstart', jump);
-
-
-
-//>>>>>>>>>>>>>>>>>
-window.addEventListener('touchstart', () =>  console.log('touchstart'));
+    document.addEventListener('click', jump);
 
 });
