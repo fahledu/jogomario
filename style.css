@@ -19,7 +19,7 @@
     bottom: 0;
     width: 80px;
     height: 80px;
-    animation: pipe-animation 200s infinite linear;
+    animation: pipe-animation 2s infinite linear;
 }
 
 @keyframes pipe-animation {
@@ -80,7 +80,7 @@
     }
 }
 
-@media screen and (orientation: landscape){
+@media screen and (orientation: landscape) and (max-height: 350px){
     .game-board {height: 100vh;}
-    .cloud{width: 225px;}
+    .cloud{width: 325px;}
 }
